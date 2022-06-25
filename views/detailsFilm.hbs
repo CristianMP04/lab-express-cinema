@@ -1,0 +1,15 @@
+
+<h1>{{singleTitle.title}}</h1>
+<h3>{{singleTitle.director}}</h3>
+<ul>
+{{#each singleTitle.stars}} 
+    <li>{{this}}</li>
+{{/each}} </ul>
+<img src="{{singleTitle.image}}" alt="{{singleTitle.title}}">
+<p>{{singleTitle.description}}</p>
+
+{{#each singleTitle.showtimes}}
+    <span>{{this}} |</span>
+{{/each}}
+
+
